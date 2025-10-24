@@ -11,7 +11,8 @@ public class Core{
         posizioneCore = new Posizione();
     }
 
-    public void aggiungiAggiorna(Tag t){ 
+    public void aggiungiAggiorna(Tag t){
+        t.aggiornaDistanza();
         int posizione = trova(t); 
         if(posizione == -1){ 
             aggiungi(t);
@@ -34,8 +35,7 @@ public class Core{
     public Tag[] vicini(float distanza){
         Tag[] vicini = new Tag[size];
         for(int i = 0; i < size; i++){
-            Posizione posTag = elenco[i].getPosizione();
-            if(posTag.distanzaDa(posizioneCore) <= distanza)
+            if(elenco[i].getDistanza() <= distanza)
                 vicini[i] = elenco[i];
         }
 
@@ -70,5 +70,3 @@ public class Core{
         return -1;
     }
 }
-
-//prova
