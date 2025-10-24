@@ -26,7 +26,7 @@ public class Core{
             for(int i = posizione; i < size - 1; i++){
                 elenco[i] = elenco[i + 1];
             }
-            elenco[size - 1] = null; 
+            elenco[size - 1] = null;
             size--;
         }
     }
@@ -69,5 +69,6 @@ public class Core{
         }
         return -1;
     }
-
 }
+
+//prova

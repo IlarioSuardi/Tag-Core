@@ -1,4 +1,4 @@
-public class Test{
+public class Main{
     public static void main(String args[]){
         Core c = new Core();
         System.out.println(c);
@@ -8,7 +8,6 @@ public class Test{
         Tag chiavi = new Tag();
         chiavi.setDescrizione("Chiavi");
 
-        
         c.aggiungiAggiorna(borsa);
         c.aggiungiAggiorna(chiavi);
         System.out.println(c);      
